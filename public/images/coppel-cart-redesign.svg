@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <rect width="800" height="500" fill="#F5F5F0" />
+  
+  {/* Header */}
+  <g transform="translate(40, 40)">
+    <text font-family="system-ui, sans-serif" font-size="10" font-weight="700" letter-spacing="0.25em" fill="#0A0A0A" opacity="0.5">COPPEL.COM · ITERACIÓN CONDUCTUAL DE CHECKOUT</text>
+    <text y="28" font-family="Georgia, serif" font-size="20" fill="#0A0A0A">Comparativa: Diseño Original vs. Rediseño con Nudge Progresivo</text>
+  </g>
+
+  {/* Screen 1: Original Screen (High abandonment) */}
+  <g transform="translate(40, 100)">
+    {/* Device Frame */}
+    <rect width="320" height="360" rx="8" fill="#FFFFFF" stroke="#0A0A0A" stroke-width="1.5" />
+    
+    {/* Status Bar / Nav */}
+    <rect width="320" height="40" fill="#005CB9" rx="8" />
+    <rect y="32" width="320" height="8" fill="#005CB9" />
+    <text x="16" y="25" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" letter-spacing="0.1em">Coppel.com</text>
+    <text x="304" y="25" text-anchor="end" font-family="system-ui, sans-serif" font-size="10" fill="#FFE500" font-weight="700">🛒 1</text>
+
+    {/* Title */}
+    <text x="16" y="65" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#0A0A0A">Tu carrito</text>
+    <line x1="16" y1="75" x2="304" y2="75" stroke="#EBEBE5" stroke-width="1" />
+
+    {/* Product */}
+    <rect x="16" y="85" width="50" height="50" fill="#F5F5F0" stroke="#EBEBE5" />
+    <text x="76" y="100" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#0A0A0A">Juguetes para Gato Fancy Pets</text>
+    <text x="76" y="116" font-family="monospace" font-size="11" fill="#005CB9" font-weight="700">$79.00</text>
+    <text x="76" y="128" font-family="system-ui, sans-serif" font-size="9" fill="#888888">Cantidad: 1</text>
+
+    {/* Fricción: Cargo de envío abrupto */}
+    <rect x="16" y="145" width="288" height="34" fill="#FEE2E2" stroke="#EF4444" rx="4" />
+    <text x="26" y="160" font-family="system-ui, sans-serif" font-size="9.5" font-weight="700" fill="#991B1B">⚠️ Costo de envío adicional: $50.00</text>
+    <text x="26" y="172" font-family="system-ui, sans-serif" font-size="8.5" fill="#B91C1C">Se cobrará al confirmar la dirección de entrega</text>
+
+    {/* Summary */}
+    <rect x="16" y="190" width="288" height="90" fill="#F9FAFB" stroke="#E5E7EB" rx="4" />
+    <text x="28" y="210" font-family="system-ui, sans-serif" font-size="10" fill="#4B5563">Subtotal</text>
+    <text x="292" y="210" text-anchor="end" font-family="monospace" font-size="10" fill="#111827">$79.00</text>
+    <text x="28" y="230" font-family="system-ui, sans-serif" font-size="10" fill="#DC2626" font-weight="700">Costo de envío</text>
+    <text x="292" y="230" text-anchor="end" font-family="monospace" font-size="10" fill="#DC2626" font-weight="700">+$50.00</text>
+    <line x1="28" y1="242" x2="292" y2="242" stroke="#E5E7EB" />
+    <text x="28" y="262" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#111827">Total</text>
+    <text x="292" y="262" text-anchor="end" font-family="monospace" font-size="12" font-weight="800" fill="#111827">$129.00</text>
+
+    {/* Button */}
+    <rect x="16" y="295" width="288" height="36" rx="4" fill="#9CA3AF" />
+    <text x="160" y="318" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">CONTINUAR COMPRA</text>
+
+    {/* Abandonment tag */}
+    <rect x="16" y="340" width="288" height="18" fill="#FEE2E2" />
+    <text x="160" y="353" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#B91C1C">52% ABANDONO ESPERADO</text>
+  </g>
+
+  {/* Screen 2: Redesigned Screen (High Conversion) */}
+  <g transform="translate(440, 100)">
+    {/* Device Frame */}
+    <rect width="320" height="360" rx="8" fill="#FFFFFF" stroke="#005CB9" stroke-width="2" />
+    
+    {/* Status Bar / Nav */}
+    <rect width="320" height="40" fill="#005CB9" rx="8" />
+    <rect y="32" width="320" height="8" fill="#005CB9" />
+    <text x="16" y="25" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" letter-spacing="0.1em">Coppel.com</text>
+    <text x="304" y="25" text-anchor="end" font-family="system-ui, sans-serif" font-size="10" fill="#FFE500" font-weight="700">🛒 1</text>
+
+    {/* Nudge Banner: Threshold progress */}
+    <rect x="16" y="50" width="288" height="38" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1" rx="4" />
+    <text x="26" y="65" font-family="system-ui, sans-serif" font-size="9.5" font-weight="700" fill="#1E40AF">🚚 Te faltan $420 para ENVÍO GRATIS</text>
+    {/* Progress Bar */}
+    <rect x="26" y="73" width="268" height="6" fill="#DBEAFE" rx="3" />
+    <rect x="26" y="73" width="56" height="6" fill="#005CB9" rx="3" />
+
+    {/* Product */}
+    <rect x="16" y="96" width="46" height="46" fill="#F5F5F0" stroke="#EBEBE5" />
+    <text x="72" y="110" font-family="system-ui, sans-serif" font-size="10.5" font-weight="700" fill="#0A0A0A">Juguetes para Gato Fancy Pets</text>
+    <text x="72" y="124" font-family="monospace" font-size="10.5" fill="#005CB9" font-weight="700">$79.00</text>
+    <text x="72" y="136" font-family="system-ui, sans-serif" font-size="8.5" fill="#16A34A">✔ Envío seguro disponible</text>
+
+    {/* Benefits Trust Microcopy */}
+    <g transform="translate(16, 150)">
+      <rect width="288" height="42" fill="#F8FAFC" stroke="#E2E8F0" rx="4" />
+      <text x="12" y="16" font-family="system-ui, sans-serif" font-size="8.5" font-weight="700" fill="#0F172A">Beneficios de comprar en Coppel.com:</text>
+      <text x="12" y="30" font-family="system-ui, sans-serif" font-size="8" fill="#64748B">🛡️ Envío seguro  ·  🔒 Compra garantizada  ·  📦 Devolución fácil</text>
+    </g>
+
+    {/* Summary with "Envío Seguro" */}
+    <rect x="16" y="200" width="288" height="78" fill="#F8FAFC" stroke="#E2E8F0" rx="4" />
+    <text x="28" y="218" font-family="system-ui, sans-serif" font-size="9.5" fill="#475569">Subtotal de productos</text>
+    <text x="292" y="218" text-anchor="end" font-family="monospace" font-size="9.5" fill="#0F172A">$79.00</text>
+    <text x="28" y="234" font-family="system-ui, sans-serif" font-size="9.5" fill="#0F172A">Envío seguro a domicilio</text>
+    <text x="292" y="234" text-anchor="end" font-family="monospace" font-size="9.5" fill="#0F172A">$50.00</text>
+    <line x1="28" y1="244" x2="292" y2="244" stroke="#E2E8F0" />
+    <text x="28" y="262" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#005CB9">Total de contado</text>
+    <text x="292" y="262" text-anchor="end" font-family="monospace" font-size="12" font-weight="800" fill="#005CB9">$129.00</text>
+
+    {/* High-visibility Coppel Yellow/Blue Button */}
+    <rect x="16" y="286" width="288" height="40" rx="4" fill="#FFE500" stroke="#005CB9" stroke-width="1.5" />
+    <text x="160" y="311" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="900" fill="#005CB9" letter-spacing="0.05em">PAGAR $129.00</text>
+
+    {/* Conversion Result */}
+    <rect x="16" y="334" width="288" height="24" fill="#DCFCE7" />
+    <text x="160" y="350" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9.5" font-weight="800" fill="#15803D">25% ABANDONO REAL (DE 52% INICIAL)</text>
+  </g>
+</svg>
